@@ -1,34 +1,33 @@
 .cart{
     margin-top: 100px;
+    font-size: 1.6rem;
 }
-
-.cart-items-title, .cart-items-item{
-    display: grid;
+.cart-items-title{
+    display:grid;
     grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 1.5fr;
     align-items: center;
     text-align: center;
     color:grey;
-    font-size: max(1vw, 1.2rem);
+    font-size: max(1vw,12px);
 }
-
-.cart-items-item .cart-counter{
-    position:inherit;
-    justify-content: center;
-}
-
-.cart-items-item .cart-counter img{
-    width: 22px;
-    cursor: pointer;
-}
-
 .cart-items-item{
-    margin: 10px 0;
-    color:black
+    margin:10px 0;
+    color:black;
 }
 
 .cart-items-item img{
     width:50px;
     justify-self: center;
+}
+
+.cart-counter{
+    position:inherit;
+    justify-content: center;
+}
+
+.cart-counter img{
+    width:22px;
+    cursor: pointer;
 }
 
 .cart hr{
@@ -38,49 +37,41 @@
 }
 
 .cart-bottom{
-    margin-top: 80px;
     display: flex;
+    margin-top: 80px;
     justify-content: space-between;
-    gap:max(12vw,10px);
+    gap:max(12vw,10px)
 }
 
 .cart-total{
     flex:1;
     display: flex;
     flex-direction: column;
-    gap:20px
+    gap:20px;
 }
 
 .cart-total-details{
     display: flex;
     justify-content: space-between;
-    color:#555
+    color:#555;
 }
 
 .cart-total hr{
-    margin: 10px 0;
+    margin:10px 0px;
 }
 
 .cart-total button{
-    border:none;
+    border: none;
     color:white;
     background-color: var(--theme-color);
-    width:max(15vw,200px);
-    padding:12px 0;
+    padding:12px 0px;
     border-radius: 4px;
-    cursor: pointer;
-}
-
-.cart-promocode{
-    flex:1
-}
-
-.cart-promocode p{
-    color:#555
+    width:max(15vw,200px);
+    cursor:pointer;
 }
 
 .cart-promocode-input{
-    margin-top: 10px;
+    margin-top:10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,13 +87,12 @@
 }
 
 .cart-promocode-input button{
-    background-color: black;
-    color:white;
     width:max(10vw,150px);
     padding:12px 5px;
-    border:none;
+    background-color: black;
+    border: none;
+    color: white;
     border-radius: 4px;
-
 }
 
 @media (max-width:750px){

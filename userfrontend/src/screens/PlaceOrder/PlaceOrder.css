@@ -1,18 +1,19 @@
 .place-order{
     display: flex;
-    align-items: start;
     justify-content: space-between;
+    align-items: start;
     gap:50px;
     margin-top: 100px;
+    font-size: 1.6rem;
 }
 
 .place-order-left{
-    width: 100%;
+    width:100%;
     max-width: max(30%,500px);
 }
 
 .place-order-left .title{
-    font-size: 3rem;
+    font-size: 30px;
     font-weight: 600;
     margin-bottom: 50px;
 }
@@ -20,7 +21,7 @@
 .place-order-left input{
     margin-bottom: 15px;
     width: 100%;
-    padding: 10px;
+    padding:10px;
     border: 1px solid #c5c5c5;
     border-radius: 4px;
     outline: var(--theme-color);
@@ -28,7 +29,7 @@
 
 .place-order-left .multi-fields{
     display: flex;
-    gap:10px
+    gap:10px;
 }
 
 .place-order-right{
