@@ -15,12 +15,13 @@ app.use(cors({
         'http://localhost:5173',
         'http://localhost:5174',
         'http://localhost:5175',
-        'https://userfrontendvit-qtka.onrender.com',  // ✅ user frontend
-        'https://adminfrontendvit-abcx.onrender.com'  // ✅ admin frontend (replace with your actual URL)
+        'https://userfrontendvit-qtka.onrender.com',
+        'https://foodprepvitadmin-ic3a.onrender.com'  // ✅ NEW: admin frontend
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }));
+
 
 
 
