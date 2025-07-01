@@ -92,6 +92,9 @@
 .nav-profile-dropdown li:hover{
     color:var(--theme-color)
 }
+.navbar-menu p, .navbar-menu a {
+  cursor: pointer;
+}
 
 @media (max-width:1050px){
     .navbar .logo{
