@@ -17,7 +17,7 @@ const List = ({url}) => {
 
   useEffect(()=>{
     fetchList()
-  },[list])
+  },[])
 
   const removeFood = async(id)=>{
     try {
