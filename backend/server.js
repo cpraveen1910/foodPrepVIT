@@ -15,11 +15,13 @@ app.use(cors({
         'http://localhost:5173',
         'http://localhost:5174',
         'http://localhost:5175',
-        'https://userfrontendvit-qtka.onrender.com'  // ✅ deployed frontend URL
+        'https://userfrontendvit-qtka.onrender.com',  // ✅ user frontend
+        'https://adminfrontendvit-abcx.onrender.com'  // ✅ admin frontend (replace with your actual URL)
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }));
+
 
 
 app.use("/image", express.static('uploads'))
