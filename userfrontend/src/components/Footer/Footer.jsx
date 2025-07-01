@@ -27,13 +27,13 @@ const Footer = () => {
         <div className="footer-content-right">
           <h2>Get in touch</h2>
           <ul>
-            <li>+91 96297 45022</li>
-            <li>enquiry@faceprep.in</li>
+            <li>+91 90146 85584</li>
+            <li>ppraveen5019@gmail.com</li>
           </ul>
         </div>
       </div>
       <hr className="footer-hr" />
-      <p className='footer-copyright'>Copyright 2024 © 2021 FoodPrep. All rights reserved.</p>
+      <p className='footer-copyright'>Copyright 2028 © 2024 FoodPrep. All rights reserved.</p>
     </div>
   )
 }
