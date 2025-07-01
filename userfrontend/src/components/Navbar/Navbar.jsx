@@ -21,10 +21,16 @@ const Navbar = ({showLogin,setShowLogin}) => {
     <div className="navbar">
         <Link to='/'><img className='logo' src={assets.logo} alt="" /></Link>
         <ul className='navbar-menu'>
-            <Link to='/' className = {menu ==='home' ? 'active' : ''}  onClick={()=>setMenu('home')} >Home</Link>
-            <a href='#food-display' className = {menu ==='menu' ? 'active' : ''} onClick={()=>setMenu('menu')} >Menu</a>
-            <a href='#footer' className = {menu ==='contact-us' ? 'active' : ''} onClick={()=>setMenu('contact-us')}>Contact us</a>
-        </ul>
+    <Link to='/' className={menu === 'home' ? 'active' : ''} onClick={() => setMenu('home')}>Home</Link>
+    <p className={menu === 'menu' ? 'active' : ''} onClick={() => {
+        setMenu('menu');
+        document.getElementById('food-display')?.scrollIntoView({ behavior: 'smooth' });
+    }}>Menu</p>
+    <p className={menu === 'contact-us' ? 'active' : ''} onClick={() => {
+        setMenu('contact-us');
+        document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' });
+    }}>Contact us</p>
+</ul>
         <div className="navbar-right">
             <div className="dot-basket">
                 <Link to='/cart'><img src={assets.basket_icon} alt="" /></Link>
